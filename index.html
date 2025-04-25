@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css" />
+     <title>AVANTI - Loja Online</title>
+</head>
+
+<body>
+
+     <div class="top-bar">
+          🎉 Ganhe R$ 10,00 de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10
+     </div>
+
+     <header class="header">
+          <div class="header-container">
+               <a href="#" class="logo">AVANTI</a>
+
+               <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Digite aqui o que você precisa...">
+                    <button id="searchButton">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                              viewBox="0 0 16 16">
+                              <path
+                                   d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                         </svg>
+                    </button>
+               </div>
+
+               <div class="user-actions">
+                    <a href="#" class="user-profile" style="display: flex; align-items: center; text-decoration: none;">
+                         <div
+                              style="background-color: #1363df; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 8px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                   viewBox="0 0 16 16">
+                                   <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                              </svg>
+                         </div>
+                         <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                              <span style="font-size: 12px; color: #333;">Olá,</span>
+                              <span style="font-size: 14px; color: #333; font-weight: 500;">Nome cliente!</span>
+                         </div>
+                    </a>
+                    <a href="#" class="cart-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                              viewBox="0 0 16 16">
+                              <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                         </svg>
+                         <span class="cart-count">2</span>
+                    </a>
+               </div>
+          </div>
+     </header>
+
+     <div id="searchResult" class="search-result">
+          Você buscou por: <span id="searchTerm"></span>
+     </div>
+
+     <nav class="categories">
+          <a href="#" class="category-item">
+               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                         d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z" />
+                    <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+               </svg>
+               Todas as Categorias
+          </a>
+          <a href="#" class="category-item">Departamento</a>
+          <a href="#" class="category-item">Departamento</a>
+          <a href="#" class="category-item">Departamento</a>
+          <a href="#" class="category-item">Departamento</a>
+          <a href="#" class="category-item">Departamento</a>
+          <a href="#" class="category-item">Departamento</a>
+          <a href="#" class="category-item">Departamento</a>
+          <a href="#" class="category-item">Departamento</a>
+     </nav>
+
+     <section class="hero-banner">
+          <div class="hero-image">
+               <img src="./assets/source-images/cadeira-avanti.png" alt="Roupas dobradas" class="clothes-stack">
+          </div>
+          <div class="hero-content">
+               <h1 class="hero-title">SUPER<span>SALE</span></h1>
+               <p class="hero-subtitle">ITENS SELECIONADOS COM ATÉ</p>
+               <p class="discount">50%OFF</p>
+          </div>
+     </section>
+
+     <div class="section-title">
+          <h2>Lançamentos</h2>
+          <a href="#" class="see-all">Ver mais</a>
+     </div>
+
+     <div class="product-slider">
+          <div class="slider-arrow arrow-left">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                         d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+               </svg>
+          </div>
+
+          <div class="product-container">
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+          </div>
+
+          <div class="slider-arrow arrow-right">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+               </svg>
+          </div>
+     </div>
+
+     <div class="page-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+     </div>
+
+     <section class="feature-section">
+          <div class="feature-image">
+               <img src="./assets/source-images/caneca-avanti.png" alt="Caneca AVANTI">
+          </div>
+          <div class="feature-content">
+               <h2 class="feature-title">LOREM IPSUM</h2>
+               <p class="feature-text">
+                    Duis consectetur mollis leo lacinia auctor sit amet porttitor.
+                    Nullam id libero lacus, vel hendrerit orci. Integer gravida
+                    vulputate justo a egestas. Duis dignissim ipsum at orci dictum
+                    aliquet. Sed pellentesque felis placerat a aliquet quam cursus
+                    posuere. Duis hendrerit a. Maecenas imperdiet porttitor
+                    vestibulum. Pellentesque habitant morbi tristique senectus et
+                    netus et malesuada fames ac turpis egestas. Nulla facilisi.
+               </p>
+               <p class="feature-text">
+                    Duis consectetur mollis leo lacinia auctor sit amet porttitor.
+                    Nullam id libero lacus, vel hendrerit orci. Integer gravida
+                    vulputate justo a egestas. Duis dignissim ipsum at orci dictum
+                    aliquet. Sed pellentesque felis placerat a aliquet quam cursus
+                    posuere. Duis hendrerit a. Maecenas imperdiet porttitor
+                    vestibulum. Pellentesque habitant morbi tristique senectus et
+                    netus et malesuada fames ac turpis egestas. Nulla facilisi.
+                    Nullam aliquet lacinia sagittis. Mauris dignissim ligula id tellus
+                    pulvinar et lacinia. Sed felis ipsum fermentum magna tincidunt
+                    porta quis id.
+               </p>
+          </div>
+     </section>
+
+     <section class="icons-section">
+          <div class="icons-container">
+               <div class="icon-column">
+                    <div class="icon-box">
+                         <div class="icon-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                   viewBox="0 0 16 16">
+                                   <path
+                                        d="M8 16a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-1.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z" />
+                                   <path
+                                        d="M8 4.5a.5.5 0 0 1 .5.5v3.5h2a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5z" />
+                              </svg>
+                         </div>
+                         <div class="icon-content">
+                              <h3 class="icon-title">Lorem Ipsum</h3>
+                              <p class="icon-text">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                   montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                                   pretium quis, sem. </p>
+                         </div>
+                    </div>
+                    <div class="icon-box">
+                         <div class="icon-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                   viewBox="0 0 16 16">
+                                   <path
+                                        d="M8 16a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-1.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z" />
+                                   <path
+                                        d="M8 4.5a.5.5 0 0 1 .5.5v3.5h2a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5z" />
+                              </svg>
+                         </div>
+                         <div class="icon-content">
+                              <h3 class="icon-title">Lorem Ipsum</h3>
+                              <p class="icon-text">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                   montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                                   pretium quis, sem. </p>
+                         </div>
+                    </div>
+                    <div class="icon-box">
+                         <div class="icon-circle">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                   viewBox="0 0 16 16">
+                                   <path
+                                        d="M8 16a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-1.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z" />
+                                   <path
+                                        d="M8 4.5a.5.5 0 0 1 .5.5v3.5h2a.5.5 0 0 1 0 1H8a.5.5 0 0 1-.5-.5V5a.5.5 0 0 1 .5-.5z" />
+                              </svg>
+                         </div>
+                         <div class="icon-content">
+                              <h3 class="icon-title">Lorem Ipsum</h3>
+                              <p class="icon-text">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                   montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                                   pretium quis, sem. </p>
+                         </div>
+                    </div>
+               </div>
+               <div class="feature-image">
+                    <img src="./assets/source-images/imagem-fundo-caneca-avanti.png" alt="Caneca AVANTI">
+               </div>
+          </div>
+     </section>
+
+
+     <section class="feature-section">
+          <div class="feature-image">
+               <img src="./assets/source-images/caneca-avanti.png" alt="Caneca AVANTI">
+          </div>
+          <div class="feature-content">
+               <h2 class="feature-title">LOREM IPSUM</h2>
+               <p class="feature-text">
+                    Duis consectetur mollis leo lacinia auctor sit amet porttitor.
+                    Nullam id libero lacus, vel hendrerit orci. Integer gravida
+                    vulputate justo a egestas. Duis dignissim ipsum at orci dictum
+                    aliquet. Sed pellentesque felis placerat a aliquet quam cursus
+                    posuere. Duis hendrerit a. Maecenas imperdiet porttitor
+                    vestibulum. Pellentesque habitant morbi tristique senectus et
+                    netus et malesuada fames ac turpis egestas. Nulla facilisi.
+               </p>
+               <p class="feature-text">
+                    Duis consectetur mollis leo lacinia auctor sit amet porttitor.
+                    Nullam id libero lacus, vel hendrerit orci. Integer gravida
+                    vulputate justo a egestas. Duis dignissim ipsum at orci dictum
+                    aliquet. Sed pellentesque felis placerat a aliquet quam cursus
+                    posuere. Duis hendrerit a. Maecenas imperdiet porttitor
+                    vestibulum. Pellentesque habitant morbi tristique senectus et
+                    netus et malesuada fames ac turpis egestas. Nulla facilisi.
+                    pulvinar et lacinia. Sed felis ipsum fermentum magna tincidunt
+                    porta quis id.
+               </p>
+          </div>
+     </section>
+
+
+     <div class="section-title">
+          <h2>Lançamentos</h2>
+          <a href="#" class="see-all">Ver mais</a>
+     </div>
+
+     <div class="product-slider">
+          <div class="slider-arrow arrow-left">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                         d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+               </svg>
+          </div>
+
+          <div class="product-container">
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+
+               <div class="product-card">
+                    <div class="product-image">
+                         <span class="product-badge">NOVO</span>
+                         <img src="./assets/source-images/camiseta-branca-avanti.png" alt="Camiseta Branca">
+                    </div>
+                    <div class="product-info">
+                         <h3 class="product-title">Camiseta Básica Em Algodão Pima Com Gola Careca Regular Off White
+                         </h3>
+                         <div class="price-container">
+                              <span class="original-price">R$ 119,90</span>
+                              <span class="current-price">R$ 89,90</span>
+                              <span class="discount-tag">25% OFF</span>
+                         </div>
+                         <p class="installment">ou até 3x de R$ 29,97 sem juros</p>
+                         <button class="product-button">Comprar</button>
+                         <button class="product-button secondary">Adicionar</button>
+                    </div>
+               </div>
+          </div>
+
+          <div class="slider-arrow arrow-right">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+               </svg>
+          </div>
+     </div>
+
+     <div class="page-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+     </div>
+
+     <div class="cta-banner">
+          <img src="./assets/source-images/imagem-fundo-avanti-painel.png" alt="Painel AVANTI">
+          <div class="cta-content">
+               <div class="cta-text-box">
+                    <p class="cta-text">Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+               </div>
+          </div>
+     </div>
+
+     <div class="newsletter">
+          <h3 class="newsletter-title">Cadastre-se na nossa newsletter</h3>
+          <form class="newsletter-form">
+               <input type="text" placeholder="Nome completo">
+               <input type="email" placeholder="Email de contato">
+               <button type="submit">Cadastrar</button>
+          </form>
+     </div>
+
+     <footer class="footer">
+          <div class="footer-content">
+               <div class="footer-top">
+                    <div class="footer-column">
+                         <div class="footer-logo">AVANTI</div>
+                         <div class="social-links">
+                              <a href="#" class="social-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                             d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                   </svg>
+                              </a>
+                              <a href="#" class="social-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                             d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                   </svg>
+                              </a>
+                              <a href="#" class="social-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                             d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                   </svg>
+                              </a>
+                              <a href="#" class="social-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                             d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                   </svg>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="footer-column">
+                         <h4>Links Institucionais</h4>
+                         <ul class="footer-links">
+                              <li><a href="#">Sobre Nós</a></li>
+                              <li><a href="#">Nossas Lojas</a></li>
+                              <li><a href="#">Trabalhe Conosco</a></li>
+                              <li><a href="#">Termos e Condições</a></li>
+                              <li><a href="#">Política de Privacidade</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="footer-column">
+                         <h4>Central de Ajuda</h4>
+                         <ul class="footer-links">
+                              <li><a href="#">Como Comprar</a></li>
+                              <li><a href="#">Prazos e Entregas</a></li>
+                              <li><a href="#">Trocas e Devoluções</a></li>
+                              <li><a href="#">Pagamentos</a></li>
+                              <li><a href="#">Fale Conosco</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="footer-column">
+                         <h4>Atendimento</h4>
+                         <ul class="footer-links">
+                              <li><a href="#">Telefone: (11) 1234-5678</a></li>
+                              <li><a href="#">WhatsApp: (11) 98765-4321</a></li>
+                              <li><a href="#">Email: contato@avanti.com.br</a></li>
+                              <li><a href="#">Horário de Funcionamento: Segunda à Sexta, 9h às 18h</a></li>
+                         </ul>
+                    </div>
+               </div>
+
+               <br>
+               <br>
+
+               <div class="payment-methods"
+                    style="display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; max-width: 800px; margin: 0 auto;">
+                    <div class="payment-icon">
+                         <img src="./assets/pagamentos/visa.png" alt="Visa"
+                              style="width: 40px; height: 25px; object-fit: contain;">
+                    </div>
+                    <div class="payment-icon">
+                         <img src="./assets/pagamentos/União 39.png" alt="Mastercard"
+                              style="width: 40px; height: 25px; object-fit: contain;">
+                    </div>
+                    <div class="payment-icon">
+                         <img src="./assets/pagamentos/amex.png" alt="American Express"
+                              style="width: 40px; height: 25px; object-fit: contain;">
+                    </div>
+                    <div class="payment-icon">
+                         <img src="./assets/pagamentos/b.png" alt="Elo"
+                              style="width: 40px; height: 25px; object-fit: contain;">
+                    </div>
+                    <div class="payment-icon">
+                         <img src="./assets/pagamentos/União 32.png" alt="Pix"
+                              style="width: 40px; height: 25px; object-fit: contain;">
+                    </div>
+                    <div class="payment-icon">
+                         <img src="./assets/pagamentos/icon-boleto___ffe2ba684569d29f8e546b10457c48f8.png" alt="Boleto"
+                              style="width: 40px; height: 25px; object-fit: contain;">
+                    </div>
+                    <div class="payment-icon">
+                         <img src="./assets/pagamentos/hipercard.png" alt="PagSeguro"
+                              style="width: 40px; height: 25px; object-fit: contain;">
+                    </div>
+                    <div class="payment-icon">
+                         <img src="./assets/pagamentos/paypal-seeklogo.com.png" alt="PayPal"
+                              style="width: 40px; height: 25px; object-fit: contain;">
+                    </div>
+               </div>
+
+               <br>
+               <br>
+
+               <div class="footer-bottom"
+                    style="display: flex; justify-content: center; flex-wrap: wrap; text-align: center; gap: 8px; max-width: 800px; margin: 0 auto;">
+                    <p>&copy; Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                         tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                         nostrud exerci tation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                         dolor in hendrerit? In vulputate velit esse molleris consequat, vel felicit dictum autrui qui
+                         nisl facilisis et non erat at suscipit nulla pariatur idiot.</p>
+                    <br>
+                    <div class="certification-logos">
+                         <br>
+                         <br>
+                         <img src="./assets/certificados/Group.png" alt="Certificação" class="certification-logo">
+                         <img src="./assets/certificados/vtex-pci-200.png" alt="Certificação"
+                              class="certification-logo">
+                         <img src="./assets/certificados/Frame 14 (1).png" alt="Certificação"
+                              class="certification-logo">
+                         <img src="./assets/certificados/VTEX_Logo (1) 1.png" alt="Certificação"
+                              class="certification-logo">
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+     <script defer src="script.js"></script>
+</body>
+
+</html>
