@@ -16,7 +16,7 @@
 
      <header class="header">
           <div class="header-container">
-               <a href="#" class="logo">AVANTI</a>
+               <img src="./assets/source-images/avanti-logo.png" href="#" alt="Logo AVANTI" class="logo">
 
                <div class="search-bar">
                     <input type="text" id="searchInput" placeholder="Digite aqui o que você precisa...">
@@ -62,12 +62,10 @@
 
      <nav class="categories">
           <a href="#" class="category-item">
-               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
-                    <path
-                         d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z" />
-                    <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-               </svg>
-               Todas as Categorias
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                Todas as Categorias
           </a>
           <a href="#" class="category-item">Departamento</a>
           <a href="#" class="category-item">Departamento</a>
@@ -471,11 +469,19 @@
           </div>
      </div>
 
+     <br>
+     <br>
+
+     <h3 class="newsletter-title">Cadastre-se na nossa <span class="highlight">newsletter</span></h3>
      <div class="newsletter">
-          <h3 class="newsletter-title">Cadastre-se na nossa newsletter</h3>
           <form class="newsletter-form">
-               <input type="text" placeholder="Nome completo">
-               <input type="email" placeholder="Email de contato">
+               <input type="text" placeholder="Digite seu nome">
+               <input type="email" placeholder="Digite seu e-mail">
+               <div class="checkbox-container">
+                    <input type="checkbox" id="policy-check">
+                    <span>Está de acordo com a <a href="#" class="policy-link">política de privacidade</a>?</span>
+                </div>
+               
                <button type="submit">Cadastrar</button>
           </form>
      </div>
@@ -484,7 +490,7 @@
           <div class="footer-content">
                <div class="footer-top">
                     <div class="footer-column">
-                         <div class="footer-logo">AVANTI</div>
+                         <img src="./assets/source-images/avanti-logo.png">
                          <div class="social-links">
                               <a href="#" class="social-link">
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
